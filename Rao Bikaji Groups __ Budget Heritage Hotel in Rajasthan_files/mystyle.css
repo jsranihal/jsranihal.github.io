@@ -1,0 +1,778 @@
+/*a:link {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #666666;
+}*/
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background:#f1efe7 url(../images/newbg.png) repeat-x;
+}
+.header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.menus {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+}
+ul.topmenu {
+	margin:0px;
+	padding:0px 0px 0px 25px;
+}
+.topmenu li {
+	display:block;
+	float:left;
+	background:url(../images/menudevider.gif) left top no-repeat;
+	list-style:none;
+	padding:4px 0px 0px 0px;
+	margin:0px;
+}
+.topmenu li a {
+	font:Verdana, Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	font-size:16px;
+	text-decoration:none;
+	text-transform:capitalize;
+	display:block;
+	float:left;
+	background:url(../images/topmenuleft.gif) left top no-repeat;
+	padding:0px 25px 0px 0px;
+}
+.topmenu li a span {
+	display:block;
+	float:left;
+	padding:8px 10px 9px 10px;
+	cursor:pointer;
+	background:url(../images/topmenuright.gif) right top no-repeat;
+}
+.topmenu li a:hover {
+	color:#993131;
+	background:url(../images/topdisc.gif) 50% 0% no-repeat;
+}
+.topmenu li a:hover span {
+	background:url(../images/topmenurighthover.gif) right top no-repeat;
+}
+.topmenu li a.active {
+	color:#993131;
+	background:url(../images/topdisc.gif) 50% 0% no-repeat;
+}
+.accord_top {
+	padding:10px 0;
+	margin:0;
+}
+/* jquery.v1.4.2 */
+/* Small reset */
+/*Featuread Area*/
+#featured, .featured, .fadeout, .newsselect {
+	height:360px; /*this changes the height of the image slider*/
+}
+#feature_wrap {
+	width:959px;
+	border:5px solid #f4f4f4;
+	margin:0 auto;
+}
+#featured {
+	position: relative;
+	width:957px;
+	overflow: hidden;
+}
+.featured {
+	width:715px;
+	position:absolute;
+	top:0;
+	left:0;
+	overflow: hidden;
+	display:none;
+	border-left:3px solid #FFFFFF;
+	background: #fff url(../images/preload.gif) no-repeat center center;
+}
+.preloading_background {
+	background: transparent url(../images/preload.gif) no-repeat 50% 50%;
+}
+#feature_wrap .fadeout {
+	background: transparent url(../images/overlay.png) repeat-y right top;
+}
+.bottom_left_rounded_corner {
+	background: transparent url(../images/rounded.png) no-repeat left bottom;
+}
+.bottom_right_rounded_corner {
+	background: transparent url(../images/rounded.png) no-repeat right bottom;
+}
+#feature_wrap #featured .feature_excerpt {
+	background: #fff;
+}
+#feature_wrap #featured a {
+	color:#444;
+}
+.accord_top .feature_excerpt {
+	width:660px;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left:0;
+	z-index: 2;
+	padding:10px 20px;
+	font-size: 11.5px;
+	line-height:1.5em;
+	cursor: pointer;
+}
+.slide_image {
+	width:950px;
+	height:300px;
+}
+.middle_text {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#9d998a;
+	font-style:italic;
+	line-height:22px;
+	text-align:justify;
+	background-color:#ffffff;
+	padding:0 10px 0 0px;
+}
+.middle_text2 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#797065;
+	font-style:italic;
+	line-height:20px;
+	text-align:justify;
+}
+.contact_text {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#797065;
+	font-style:italic;
+	line-height:22px;
+	text-align:left;
+}
+.ourhistory {
+	font-family: "Times New Roman", Times, serif;
+	color:#897a66;
+	font-style:italic;
+	font-size:25px;
+}
+.welcome {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#736a5f;
+	text-align:justify;
+	line-height:20px;
+	padding-bottom:20px;
+	
+}
+#ifram_box{ height:auto;
+float:left;
+position:relative;}
+
+.welcome a:link {
+	color: #736a5f;
+	text-decoration: none;
+}
+.welcome a:visited {
+	text-decoration: none;
+	color: #736a5f;
+}
+.welcome a:hover {
+	text-decoration: underline;
+	color: #736a5f;
+}
+.welcome a:active {
+	text-decoration: none;
+	color: #736a5f;
+}
+.welcome_link {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#6f2d13;
+	text-align:justify;
+	line-height:21px;
+}
+.welcome_link a:link {
+	color: #6f2d13;
+	text-decoration: none;
+}
+.welcome_link a:visited {
+	text-decoration: none;
+	color: #6f2d13;
+}
+.welcome_link a:hover {
+	text-decoration: underline;
+	color: #6f2d13;
+}
+.welcome_link a:active {
+	text-decoration: none;
+	color: #6f2d13;
+}
+.special {
+	font-family: "Times New Roman", Times, serif;
+	font-size:17px;
+	color:#a73a3a;
+}
+.special a:link {
+	color: #a73a3a;
+	text-decoration: none;
+}
+.special a:visited {
+	text-decoration: none;
+	color: #a73a3a;
+}
+.special a:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+.special a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.footer {
+	height:35px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	text-align:left;
+}
+.footer a:link {
+	color: #666666;
+	text-decoration: none;
+}
+.footer a:visited {
+	text-decoration: none;
+	color: #666666;
+}
+.footer a:hover {
+	text-decoration: underline;
+	color: #666666;
+}
+.footer a:active {
+	text-decoration: none;
+	color: #666666;
+}
+.our_group {
+	font-family: "Times New Roman", Times, serif, Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-style:italic;
+	color:#a49d8a;
+}
+/* menus */
+/* remove the list style */
+	#nav {
+	margin:0;
+	padding:0;
+	list-style:none;
+	margin-top:10px;
+}
+/* make the LI display inline */
+		/* it's position relative so that position absolute */
+		/* can be used in submenu */
+		#nav li {
+	float:left;
+	display:block;
+	width:auto;
+	position:relative;
+	z-index:500;
+	margin:0 15px;
+}
+/* this is the parent menu */
+		#nav li a {
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	padding:8px 5px 0 5px;
+ height:2.px;
+	text-decoration:none;
+	color:#8a7e6e;
+	text-align:center;
+}
+#nav li a:hover {
+	color:#993131;
+}
+/* you can make a different style for default selected value */
+		#nav a.selected {
+	color:#993131;
+}
+/* submenu, it's hidden by default */
+		#nav ul {
+	position:absolute;
+	left:0;
+	display:none;
+	margin:0 0 0 -1px;
+	padding:0;
+	list-style:none;
+}
+#nav ul li {
+	width:225px;
+	float:left;
+	border-top:1px solid #fff;
+	background-color:#a73a3a;
+}
+/* display block will make the link fill the whole area of LI */
+		#nav ul a {
+	display:block;
+	height:15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding: 8px 5px;
+	color:#FFFFFF;
+	text-align:left;
+}
+#nav ul a:hover {
+	text-decoration:none;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background-color:#f1efe9;
+	color:#000000;
+}
+/* fix ie6 small issue */
+		/* we should always avoid using hack like this */
+		/* should put it into separate file : ) */
+		.html #nav ul {
+	margin:0 0 0 -2px;
+}
+/* end */		
+
+.text_heading {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:23px;
+	font-weight:bold;
+	color:#725039;
+	padding-left:10px;
+	padding-top:6px;
+	text-transform:uppercase;
+}
+.sub_text_heading {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#725039;
+	padding-bottom:6px;
+}
+.image_photo {
+	width:auto;
+	height:auto;
+	float:right;
+	margin-left:10px;
+	text-align:center;
+	vertical-align:middle;
+	padding:8px;
+	border:#CCCCCC thin solid;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	box-shadow:#cccccc 1px 2px 1px 1px;
+}
+.image_photo3 {
+	width:auto;
+	height:auto;
+	float:right;
+
+	text-align:center;
+	vertical-align:middle;
+	padding:8px;
+	border:#CCCCCC thin solid;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	box-shadow:#cccccc 1px 2px 1px 1px;
+}
+.image_photo4 {
+	width:auto;
+	height:auto;
+	float:left;
+     margin:0 23px 23px 0;
+	text-align:center;
+	vertical-align:middle;
+	padding:8px;
+	border:#CCCCCC thin solid;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	box-shadow:#cccccc 1px 2px 1px 1px;
+}
+.image_photo2 {
+	width:auto;
+	height:auto;
+	float:left;
+	margin-right:10px;
+	text-align:center;
+	vertical-align:middle;
+	padding:8px;
+	border:#CCCCCC thin solid;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	box-shadow:#cccccc 1px 2px 1px 1px;
+}
+.booking_form {
+	width:700px;
+	margin-top:40;
+	padding:5px;
+	float:left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+/********** donation form **********/
+#booking {
+	margin:0;
+	padding:5px 10px;
+}
+#booking * {
+	color:#00000;
+}
+#booking ol {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#booking li {
+	margin:0;
+	padding:0;
+	background:none;
+	border:none;
+	display:block;
+	clear:both;
+}
+#booking li.buttons {
+	margin:5px 0 5px 0;
+	float:right;
+	clear:both;
+}
+#booking label {
+	margin:0;
+	width:180px;
+	display:block;
+	padding:10px 30px 0 0;
+	color:#6a6a6a;
+	font:normal 12px verdana, "Times New Roman", Times, serif;
+	font-weight:bold;
+	text-transform:capitalize;
+	float:left;
+}
+#booking label span {
+	color:#F00;
+}
+#booking input.text {
+	width:350px;
+	border:1px solid #e1e1e1;
+	margin:2px 0;
+	padding:8px 2px;
+	height:30px;
+	background:#fff;
+	float:left;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+}
+#booking textarea {
+	width:350px;
+	border:1px solid #e1e1e1;
+	margin:2px 0;
+	padding:8px;
+	background:#fff;
+	float:left;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+}
+#booking li.buttons {
+	padding:3px 0 10px 0px;
+	margin:10px 115px 0px 0px;
+	border:0;
+	color:#FFF;
+	float:right;
+}
+.booking_office_box {
+	width:590px;
+	height:589px;
+	padding-left:10px;
+	padding-top:10px;
+	
+	background-color:#f2f0e8;
+}
+.booking_office_add {
+	width:280px;
+	height:143px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:22px;
+	float:left;
+	text-align:left;
+	margin:20px 10px 10px 0px;
+	color:#797065;
+}
+#facilities_link {
+	width:500px;
+	height:20px;
+    position:relative;
+	left:60px;
+	margin-bottom:40px;
+	margin-top:10px;
+	float:left;
+	
+}
+#facilities_link2 {
+	
+	height:20px;
+    margin:112px 0 0 253px;
+}
+
+#facilities_link3 {
+	
+	height:20px;
+    margin:20px 0 0 210px;
+	text-align:center
+}
+
+	
+}
+#button_tag {
+	padding:0px;
+	margin:0px;
+}
+#button_tag li {
+	display:inline-block;
+	width:auto;
+	padding:6px 10px 0px 10px;
+	height:27px;
+	border:#CCCCCC thin solid;
+	background-color:#e7e6da;
+	border-radius:6px;
+	cursor:pointer;
+	float:left;
+	margin-right:20px;
+}
+
+
+
+#button_tag li a {
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	list-style-type:none;
+	text-decoration:none;
+	text-align:center;
+	color:#725039;
+}
+.list
+{
+margin:0px;
+padding:6px 0 0 0;
+background:#999999;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:17px;
+font-weight:bold;
+color:#000000;
+text-align:center;
+height:29px;
+text-shadow:2px 2px 0px #BEBEBE
+}
+.holiday
+{
+margin:0px;
+padding:0px 0 0 75px;
+text-align:center;
+}
+
+.top_header
+{
+margin::0px;
+padding:0px;
+height:25px;
+width:100%;
+background-color:#a73a3a;
+box-shadow:2px 2px 14px 2px #BBBBBB;
+position:fixed;
+z-index:1000;
+}
+.main
+{
+margin:0px auto;
+padding:0px;
+width:1000px;
+height:auto;
+}
+.home a
+{
+margin:0px;
+padding:5px 0 0 0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#FFFFFF;
+float:left;
+text-decoration:none;
+}
+.email_add
+{
+margin:0px;
+padding:0px;
+float:right;
+width:515px;
+}
+.email_add1
+{
+margin:0px;
+padding:0px;
+float:left;
+}
+.phone_text
+{
+margin:0px;
+padding:5px 20px 0 5px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#FFFFFF;
+float:left;
+}
+.book_car
+{
+font-weight:bold;
+color:#a73a3a;
+font-size:14px;
+cursor:pointer;
+
+}
+.book_car:hover
+{
+color:#CC9933;
+text-decoration:underline;
+}
+.car_box
+{
+margin:0px 35px 20px 0;
+padding:0px 0 10px 0;
+float:left;
+box-shadow:2px 2px 14px 2px #BBBBBB;
+border:1px #999999 solid;
+cursor:pointer;
+width:300px;
+}
+.car_box:hover
+{
+border:1px #000 solid;
+}
+
+.car_name
+{
+margin:0px;
+padding:10px 0 10px 0;
+font-weight:bold;
+text-align:center;
+}
+.car_text
+{
+margin:0px;
+padding:1px;
+text-align:center;
+}
+.car_rat
+{
+margin:0px;
+padding:5px 0 0 5px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+color:#333333;
+font-weight:bold;
+line-height:25px;
+}
+.online_booking a
+{
+margin:0px;
+padding:6px 0 0 0;
+float:right;
+border:1px solid #f6f6f6;
+background-color:#FF9900;
+box-shadow:1px 1px 4px 1px #BBBBBB;
+height:23px;
+width:130px; 
+text-align:center;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#FFFFFF;
+font-weight:bold;
+border-radius:5px;
+text-decoration:none;
+text-transform:uppercase;
+
+}
+.online_booking a:hover
+{
+border:1px solid #736a5f;
+}
+.camel_safari
+{
+	margin:0px;
+	padding:5px;
+	background-color:#900;
+	width:170px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:#fff;
+	letter-spacing:0.4px;
+	border-radius:5px;
+}
+.other_act
+{
+	margin:5px 0 5px 0;
+	padding:7px 0 7px 0;
+	width:99.1%;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	text-transform:uppercase;
+	font-size:15px;
+	text-align:center;
+	background-color:#8a7e6e;
+	text-align:center;
+}
+.clr
+{
+	margin:0px;
+	padding:0px;
+	clear:both;
+	line-height:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
